@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>REST CRUD Exercise</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">-->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.0.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>REST CRUD Exercise</h3>
+      <br/>
+      <div class="row">
+        <div class="col-md-3">
+          <select id="persons" size="2" style="min-width: 150px;height: 200px;">
+          </select>
+          <div style="margin-top: 0.5em;">
+            <button id="delete" class="btn btn-default">Delete Selected</button>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div>
+            <div><label>id</label><input id="id" disabled="disabled" type="text"/></div>
+            <div><label>First Name</label><input id="fname" disabled="disabled" type="text"/></div>
+            <div><label>Last Name</label><input id="lname" disabled="disabled" type="text"/></div>
+            <div><label>Phone</label><input id="phone" disabled="disabled" type="text"/></div>
+          </div>
+          <div style="margin-top: 0.5em;">
+            <button id="btn_add" class="btn btn-default">Add Person</button>
+            <button id="btn_save" disabled="disabled" class="btn btn-default">Save Person</button>
+            <button id="btn_cancel" disabled="disabled" class="btn btn-default">Cancel</button>
+          </div>
+          <br/>
+          <p>TODO: Add the edit functionality </p>
+        </div>
+      </div>
+      <div id="err" class="alert alert-danger" role="alert"></div>
+      <br/>
+      <a href="index.html" class="btn btn-info" style="margin-top: 0.5em;"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></a>
+    </div>
+  </body>
+</html>
